@@ -25,6 +25,6 @@ echo '
 
 
 echo 'salut';
-
+echo 'c\'eST moi !'
 
 ?>
