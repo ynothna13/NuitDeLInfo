@@ -28,9 +28,12 @@ echo 'coucou';
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> 2c6ade178e67061f7d9a6b4df6d957f588eb6078
 =======
 >>>>>>> 7464923a115dfa9f09c6a36fb8dff4d638db349a
+=======
+>>>>>>> febb8d5bc5fee730684c9cf200d7074ede559b79
 ?>
