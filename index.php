@@ -27,7 +27,10 @@ echo "<center><h1>Voici la Base de zizi</h1></center>";
 echo 'coucou';
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> 2c6ade178e67061f7d9a6b4df6d957f588eb6078
+=======
+>>>>>>> 7464923a115dfa9f09c6a36fb8dff4d638db349a
 ?>
