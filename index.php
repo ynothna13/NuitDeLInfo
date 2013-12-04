@@ -1,9 +1,6 @@
 <?php
 
-
-echo 'fdtoi';
-
-
+echo 'fdtoi';ok
 
 
 ?>
