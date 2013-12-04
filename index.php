@@ -1,6 +1,10 @@
 <?php
 
+<<<<<<< .mine
+echo 'fdzeeztoi';
+=======
 echo 'flo ezse toi';
+>>>>>>> .r37
 
 ?>
 
