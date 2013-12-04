@@ -1,5 +1,5 @@
 <?php
-<<<<<<< HEAD
+
 echo '
 	<!doctype html>
 	<html lang="fr">
@@ -22,9 +22,9 @@ echo '
 		</body>
 ';
 
-=======
+
 echo "<center><h1>Voici la Base de zizi</h1></center>";
 echo 'coucou';
->>>>>>> 2c6ade178e67061f7d9a6b4df6d957f588eb6078
+
 
 ?>
