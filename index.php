@@ -1,8 +1,6 @@
 <?php
 
-echo 'fdtoi';ok
-csdcsdcs
+echo '<center><h1>La BASE</h1></center>';
 
-?>iuh
 
-fthfyf
+?>
