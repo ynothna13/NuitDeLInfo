@@ -8,6 +8,7 @@ echo '
 			<link rel="icon" href="images/favicon.png" type="image/ico" /> <!--Icone de la page (favicon) Firefox-->
 			<link rel="shortcut icon" type="image/x-icon" href="images/favicon.png" /> <!--Icone de la page (favicon) IE-->
 
+<<<<<<< HEAD
 
 			<title>Appli WEB Nuit De L\'Info</title>
 			
@@ -24,6 +25,8 @@ echo '
 
 
 
+=======
+>>>>>>> 24ff76595da37f2336b8289adf6c3d70d8a54397
 echo 'salut';
 
 
