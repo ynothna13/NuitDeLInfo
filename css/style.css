@@ -1,0 +1,218 @@
+body {
+	padding: 0;
+	margin: 0;	
+	height: 1000px;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 100%;
+}
+
+/*** Responsiv design des médias ***/
+
+img, object, embed, canvas, video, audio, picture {
+	max-width: 100%;
+	height: auto;
+	_width: 100%; /* IE6 seulement */
+}
+/***********************************/
+
+
+/***** Barre de navigation du haut *****/
+
+nav {
+	width: 100%;
+	height: 65px;
+	background: #3a3a3a;
+	border-bottom: 1px solid #585858;
+	box-shadow: 0 0 5px #3a3a3a; 
+}
+
+nav #navContenu {
+	margin: auto;
+	width: 980px;
+	height: 65px;
+}
+
+/***************************************/
+
+
+/****** Partie entre la barre de navigation et le contenu ******/
+
+header {
+	padding: 15px 0 40px 0;
+	background-color: #eaeaea;
+	border-bottom: 1px solid #7c7c7c;
+}
+
+header #headerContenu {
+	margin: auto;
+	width: 980px;
+}
+
+header #headerContenu #headerDescription, header #headerContenu #headerInscription {
+	display: inline-block;
+	vertical-align: middle;
+	width: 49%;
+
+}
+
+header #headerContenu #headerDescription #headerDescriptionContenu, header #headerContenu #headerInscription #headerInscriptionContenu {
+	padding: 50px 0 0 15px;
+	color: #575757;
+	text-shadow: 0 1px 1px #ffffff;
+}
+
+/***************************************************************/
+
+section {
+	width: 100%;
+	background: url(../images/calmness.jpg) no-repeat center fixed; 
+  	-webkit-background-size: cover; /* pour Chrome et Safari */
+  	-moz-background-size: cover; /* pour Firefox */
+  	-o-background-size: cover; /* pour Opera */
+  	background-size: cover; /* version standardisée */
+  	box-shadow: 0 0 5px #3a3a3a; 
+}
+
+section #sectionContenu {
+	width: 980px;
+	margin: auto;
+	text-align: center;
+	padding: 20px 0 20px 0;
+}
+
+section #sectionContenu article.critere {
+	display: inline-block;
+	margin: 10px 15px 10px 15px;
+	width: 28%;
+	height: 225px;
+	background-color: red;
+	border: 5px solid white;
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	border-radius: 6px;
+	box-shadow: 1px 2px 3px #757574;
+	position: relative;
+}
+
+section #sectionContenu article:nth-of-type(2) {
+	background: url(../images/ps4-large.jpeg) no-repeat center; 
+	-webkit-background-size: cover; /* pour Chrome et Safari */
+  	-moz-background-size: cover; /* pour Firefox */
+  	-o-background-size: cover; /* pour Opera */
+  	background-size: cover; /* version standardisée */
+}
+
+section #sectionContenu p {
+	width: 100%;
+	position: absolute; 
+	bottom: 0; 
+	padding: 10px 0 10px 0;
+	margin: 0;
+	color: white;
+	background: rgb(0, 0, 0);
+	background: rgba(0, 0, 0, 0.5);
+	/* For IE 5.5 - 7*/
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000);
+    /* For IE 8*/
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000)";
+}
+
+.critere {
+	width: 100%;
+	height: 100%;
+	color: white;
+	text-align: left;
+	background: rgb(0, 0, 0);
+	background: rgba(0, 0, 0, 0.7);
+}
+
+section #sectionContenu .critere .critereChoix {
+	padding: 10px;
+}
+
+footer {
+	width: 100%;
+	height: 150px;
+	background: #3a3a3a;
+	border-top: 1px solid #585858;
+}
+
+footer #footerContenu {
+	
+}
+
+
+/***** CSS pour width < 995px *****/
+
+@media screen and (max-width: 995px) {
+	nav #navContenu, header #headerContenu, section #sectionContenu {
+		width: 100%;
+	}
+}
+
+/**********************************/
+
+
+
+/***** CSS pour Tablette *****/
+
+@media screen and (min-width : 768px) and (max-width : 995px) {
+
+	section #sectionContenu article {
+		width: 44%;
+	}
+}
+
+/*****************************/
+
+
+/***** CSS pour entre smartphone et tablette *****/
+
+@media screen and (max-width : 767px) {
+
+	header #headerContenu #headerDescription {
+		display: block;
+		width: 100%;
+		max-width: 100%; 
+		height: 150px;
+	}
+	
+	header #headerContenu #headerDescription #headerDescriptionContenu {
+		padding: 15px;
+	}
+
+	header #headerContenu #headerInscription {
+		display: block;
+		width: 100%;
+		margin: 0;
+	}
+
+	section #sectionContenu article {
+		width: 43%;
+		margin: 10px 10px 10px 10px;
+	}
+}
+
+/*************************************************/
+
+
+/***** CSS pour smartphone *****/
+
+@media screen and (max-width : 480px) {
+
+	header #headerContenu #headerDescription {
+		display: none;
+	}
+	
+	header #headerContenu #headerInscription {
+		margin: 0;
+		width: 100%;
+	}
+	
+	section #sectionContenu article {
+		width: 95%;
+		margin: 10px 0 10px 0;
+	}
+}
+
+/*******************************/
