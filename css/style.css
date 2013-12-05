@@ -1,13 +1,13 @@
 body {
 	padding: 0;
 	margin: 0;	
-	height: 1000px;
 	font-family: 'Source Sans Pro', sans-serif;
 	font-size: 100%;
 }
 
 ul {
 	margin: 0;
+	padding: 0;
 }
 
 /*** Responsiv design des médias ***/
@@ -26,11 +26,24 @@ img, object, embed, canvas, video, audio, picture {
 /***********************************/
 
 
-/***** Barre de navigation du haut *****/
+/****** Partie entre la barre de navigation et le contenu ******/
+
+header {
+	width: 100%;
+	background: #3a3a3a;
+}
+
+header #headerContenu {
+	margin: auto;
+	width: 980px;
+	height: 65px;
+}
+
+/***************************************************************/
+
 
 nav {
 	width: 100%;
-	height: 65px;
 	background: #3a3a3a;
 	border-bottom: 1px solid #585858;
 	box-shadow: 0 0 5px #3a3a3a; 
@@ -39,39 +52,19 @@ nav {
 nav #navContenu {
 	margin: auto;
 	width: 980px;
-	height: 65px;
+	padding-bottom: 7px;
+	color: white;
+	font-size: 90%;
 }
 
-/***************************************/
-
-
-/****** Partie entre la barre de navigation et le contenu ******/
-
-header {
-	padding: 15px 0 40px 0;
-	background-color: #eaeaea;
-	border-bottom: 1px solid #7c7c7c;
+nav #navContenu #motCle {
+	display: inline;
+	list-style-type: none;
 }
 
-header #headerContenu {
-	margin: auto;
-	width: 980px;
+nav #navContenu #motCle li { 
+	display: inline; 
 }
-
-header #headerContenu #headerDescription, header #headerContenu #headerInscription {
-	display: inline-block;
-	vertical-align: middle;
-	width: 49%;
-
-}
-
-header #headerContenu #headerDescription #headerDescriptionContenu, header #headerContenu #headerInscription #headerInscriptionContenu {
-	padding: 50px 0 0 15px;
-	color: #575757;
-	text-shadow: 0 1px 1px #ffffff;
-}
-
-/***************************************************************/
 
 section {
 	width: 100%;
@@ -91,30 +84,78 @@ section #sectionContenu {
 }
 
 /* Bloc général */
-section #sectionContenu .critere {
+
+section #sectionContenu div[id^="critere"] {
 	display: inline-block;
 	margin: 10px 15px 10px 15px;
-	width: 28%;
-	height: 225px;
+	width: 20%;
+	height: 175px;
 	border: 5px solid white;
 	-moz-border-radius: 6px;
 	-webkit-border-radius: 6px;
 	border-radius: 6px;
 	box-shadow: 1px 2px 3px #757574;
+	
 }
 
-section #sectionContenu .critere #critereFinition {
-	width: 100%;
-	height: 100%;
-	background: url(../images/design/ps4-large.jpeg) no-repeat center; 
-	-webkit-background-size: cover; /* pour Chrome et Safari */
-  	-moz-background-size: cover; /* pour Firefox */
-  	-o-background-size: cover; /* pour Opera */
-  	background-size: cover; /* version standardisée */
+section #sectionContenu #critereFinition {
+	background: url(../images/design/iconCriteres/budget.png) no-repeat center; 
+	background-size: auto 100%;
+	background-color: white;
 }
 
-section #sectionContenu .critere #critereFinitionChoix {
-	visibility: hidden;
+section #sectionContenu #critereUtilisation {
+	background: url(../images/design/iconCriteres/budget.png) no-repeat center; 
+	background-size: auto 100%;
+	background-color: white;
+}
+
+section #sectionContenu #critereBudget {
+	background: url(../images/design/iconCriteres/budget.png) no-repeat center; 
+	background-size: auto 100%;
+	background-color: white;
+}
+
+section #sectionContenu #critereAccessibilite {
+	background: url(../images/design/iconCriteres/budget.png) no-repeat center; 
+	background-size: auto 100%;
+	background-color: white;
+}
+
+section #sectionContenu #critereSituation {
+	background: url(../images/design/iconCriteres/budget.png) no-repeat center; 
+	background-size: auto 100%;
+	background-color: white;
+}
+
+section #sectionContenu #critereConduite {
+	background: url(../images/design/iconCriteres/budget.png) no-repeat center; 
+	background-size: auto 100%;
+	background-color: white;
+}
+
+section #sectionContenu #critereSexe {
+	background: url(../images/design/iconCriteres/budget.png) no-repeat center; 
+	background-size: auto 100%;
+	background-color: white;
+}
+
+section #sectionContenu #critereAge {
+	background: url(../images/design/iconCriteres/budget.png) no-repeat center; 
+	background-size: auto 100%;
+	background-color: white;
+}
+
+section #sectionContenu #critereOrigine {
+	background: url(../images/design/iconCriteres/budget.png) no-repeat center; 
+	background-size: auto 100%;
+	background-color: white;
+}
+
+section #sectionContenu #critereTransmission {
+	background: url(../images/design/iconCriteres/budget.png) no-repeat center; 
+	background-size: auto 100%;
+	background-color: white;
 }
 
 
@@ -146,8 +187,8 @@ footer #footerContenu {
 
 @media screen and (min-width : 768px) and (max-width : 995px) {
 
-	section #sectionContenu article {
-		width: 44%;
+	section #sectionContenu div[id^="critere"] {
+		width: 25%;
 	}
 }
 
@@ -175,7 +216,7 @@ footer #footerContenu {
 		margin: 0;
 	}
 
-	section #sectionContenu article {
+	section #sectionContenu div[id^="critere"] {
 		width: 43%;
 		margin: 10px 10px 10px 10px;
 	}
@@ -197,7 +238,7 @@ footer #footerContenu {
 		width: 100%;
 	}
 	
-	section #sectionContenu article {
+	section #sectionContenu div[id^="critere"] {
 		width: 95%;
 		margin: 10px 0 10px 0;
 	}

@@ -18,48 +18,134 @@
 		<meta name="viewport" content="width=device-width">
 	</head>
 	<body>
-		<nav>
-			<div id="navContenu">
-
-			</div>
-		</nav>
 		<header>
 			<div id="headerContenu">
-				<div id="headerDescription">
-					<div id="headerDescriptionContenu">
-						<h1>Titre h1</h1>
-						<p>
-							Bla bla bla Bla bla bla Bla bla bla Bla bla bla Bla bla bla Bla bla bla Bla bla bla Bla bla bla Bla bla bla Bla bla bla Bla bla bla Bla bla bla Bla bla bla 
-						</p>
-					</div>
-				</div>
+				
 
-				<div id="headerInscription">
-					<div id="headerInscriptionContenu">
-						<h1>Titre h2</h1>
-						<p>
-							Bla bla bla Bla bla bla Bla bla bla Bla bla bla Bla bla bla Bla bla bla Bla bla bla Bla bla bla Bla bla bla Bla bla bla Bla bla bla Bla bla bla Bla bla bla 
-						</p>
-					</div>
-				</div>
 			</div>
 		</header>
 		
+		<nav>
+			<div id="navContenu">
+				Votre choix : 
+				<ul id="motCle">
+					<li>Berline, </li>
+					<li>Economique</li>
+				</ul>
+			</div>
+			
+		</nav>
+		
 		<section>
 			<div id="sectionContenu">
+				<form method="post" action="VotreSelection.php">
 				
-				<div class="critere">
 					<div id="critereFinition">
-						<div id="critereFinitionChoix">
+						<div id="choixCritereFinition">
 							<ul>
-							 	<li id="finitionChoixEco" class="cursor_link">Economique</li>
+							 	<li id="finitionChoixEconomique" class="cursor_link">Economique</li>
 							 	<li id="finitionChoixClassique" class="cursor_link">Classique</li>
 							 	<li id="finitionChoixLuxe" class="cursor_link">Luxe</li>
 							 </ul>
 						</div>
 					</div>
-				</div>
-
+					
+	
+					<div id="critereUtilisation">
+						<div id="choixCritereUtilisation">
+							<ul>
+							 	<li id="utilisationChoixEssence" class="cursor_link">Essence</li>
+							 	<li id="utilisationChoixDiesel" class="cursor_link">Diesel</li>
+							 </ul>
+						</div>
+					</div>
+					
+					<div id="critereBudget">
+						<div id="choixCritereBudget">
+							<input id="prix" onchange="document.getElementById('afficherPrix').innerHTML = document.getElementById('prix').value;" type="range" name="prix" value="0" max="100000" min="0" step="100"/>
+							<div id="afficherPrix"> 0 </div>
+						</div>
+					</div>
+					
+					<div id="critereAccessibilite">
+						<div id="choixCritereAccessibilite">
+							<ul>
+							 	<li id="accessibiliteChoixCitadine" class="cursor_link">Citadine</li>
+							 	<li id="accessibiliteChoixRoute" class="cursor_link">Route</li>
+							 	<li id="accessibiliteChoixMontagne" class="cursor_link">Montagne</li>
+							 </ul>
+						</div>
+					</div>
+					
+					<div id="critereSituation">
+						<div id="choixCritereSituation">
+							<ul>
+							 	<li id="situationChoixSeul" class="cursor_link">Seul</li>
+							 	<li id="situationChoixCouple" class="cursor_link">Couple</li>
+							 	<li id="situationChoixSeulFamille" class="cursor_link">Famille</li>
+							 	<li id="situationChoixFamilleNombreuse" class="cursor_link">Famille Nombreuse</li>
+							 </ul>
+						</div>
+					</div>
+					
+					<div id="critereConduite">
+						<div id="choixCritereConduite">
+							<ul>
+							 	<li id="conduiteChoixEconomique" class="cursor_link">Economique</li>
+							 	<li id="conduiteChoixClassique" class="cursor_link">Classique</li>
+							 	<li id="conduiteChoixSportive" class="cursor_link">Sportive</li>
+							 </ul>
+						</div>
+					</div>
+					
+					<div id="critereSexe">
+						<div id="choixCritereSexe">
+							<ul>
+							 	<li id="sexeChoixHomme" class="cursor_link">Homme</li>
+							 	<li id="sexeChoixFemme" class="cursor_link">Femme</li>
+							 </ul>
+						</div>
+					</div>
+					
+					<div id="critereAge">
+						<div id="choixCritereAge">
+							<ul>
+							 	<li id="ageChoix1825" class="cursor_link">18 - 25</li>
+							 	<li id="ageChoix2640" class="cursor_link">26 - 40</li>
+							 	<li id="ageChoix4160" class="cursor_link">41 - 60</li>
+							 	<li id="ageChoix60" class="cursor_link">60+</li>
+							 </ul>
+						</div>
+					</div>
+					
+					<div id="critereOrigine">
+						<div id="choixCritereOrigine">
+							<ul>
+							 	<li id="origineChoixFrance" class="cursor_link">France</li>
+							 	<li id="origineChoixAllemagne" class="cursor_link">Allemagne</li>
+							 	<li id="origineChoixItalie" class="cursor_link">Italie</li>
+							 	<li id="origineChoixAmericaine" class="cursor_link">Américaine</li>
+							 	<li id="origineChoixEspagne" class="cursor_link">Espagne</li>
+							 	<li id="origineChoixAnglaises" class="cursor_link">Anglaises</li>
+							 </ul>
+						</div>
+					</div>
+					
+					<div id="critereTransmission">
+						<div id="choixCritereTransmission">
+							<ul>
+							 	<li id="transmissionChoix" class="cursor_link">Traction</li>
+							 	<li id="transmissionChoix" class="cursor_link">Propulsion</li>
+							 	<li id="transmission4x4" class="cursor_link">4x4</li>
+							 </ul>
+						</div>
+					</div>
+					
+					<input type="hidden" id="critere" />
+					
+					<input type="submit" value="Laissez vos idées vous conduire" />
+					
+				</form>
 			</div>
 		</section>
 
