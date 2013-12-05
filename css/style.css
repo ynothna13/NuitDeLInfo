@@ -6,6 +6,10 @@ body {
 	font-size: 100%;
 }
 
+ul {
+	margin: 0;
+}
+
 /*** Responsiv design des médias ***/
 
 img, object, embed, canvas, video, audio, picture {
@@ -13,6 +17,12 @@ img, object, embed, canvas, video, audio, picture {
 	height: auto;
 	_width: 100%; /* IE6 seulement */
 }
+
+
+.cursor_link {
+	cursor: pointer;
+}
+
 /***********************************/
 
 
@@ -80,21 +90,22 @@ section #sectionContenu {
 	padding: 20px 0 20px 0;
 }
 
-section #sectionContenu article.critere {
+/* Bloc général */
+section #sectionContenu .critere {
 	display: inline-block;
 	margin: 10px 15px 10px 15px;
 	width: 28%;
 	height: 225px;
-	background-color: red;
 	border: 5px solid white;
 	-moz-border-radius: 6px;
 	-webkit-border-radius: 6px;
 	border-radius: 6px;
 	box-shadow: 1px 2px 3px #757574;
-	position: relative;
 }
 
-section #sectionContenu article:nth-of-type(2) {
+section #sectionContenu .critere #critereFinition {
+	width: 100%;
+	height: 100%;
 	background: url(../images/design/ps4-large.jpeg) no-repeat center; 
 	-webkit-background-size: cover; /* pour Chrome et Safari */
   	-moz-background-size: cover; /* pour Firefox */
@@ -102,33 +113,10 @@ section #sectionContenu article:nth-of-type(2) {
   	background-size: cover; /* version standardisée */
 }
 
-section #sectionContenu p {
-	width: 100%;
-	position: absolute; 
-	bottom: 0; 
-	padding: 10px 0 10px 0;
-	margin: 0;
-	color: white;
-	background: rgb(0, 0, 0);
-	background: rgba(0, 0, 0, 0.5);
-	/* For IE 5.5 - 7*/
-    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000);
-    /* For IE 8*/
-    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000)";
+section #sectionContenu .critere #critereFinitionChoix {
+	visibility: hidden;
 }
 
-.critere {
-	width: 100%;
-	height: 100%;
-	color: white;
-	text-align: left;
-	background: rgb(0, 0, 0);
-	background: rgba(0, 0, 0, 0.7);
-}
-
-section #sectionContenu .critere .critereChoix {
-	padding: 10px;
-}
 
 footer {
 	width: 100%;
