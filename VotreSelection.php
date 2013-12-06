@@ -100,7 +100,7 @@
 			
 			FROM voiture V
 			
-			INNER JOIN Pays P
+			INNER JOIN pays P
 			ON V.origine = P.id_pays
 			
 			INNER JOIN Marques M
