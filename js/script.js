@@ -10,11 +10,35 @@ $(document).ready(function(){
 	$("#choixCritereOrigine").hide();
 	$("#choixCritereTransmission").hide();
 	
+	
+	
+	
+	function calculStep(slide){
+		if(slide<500){
+			var value = 0;
+			return value = 40*slide;
+		}
+		else if(slide>=500){
+			var value = 0;
+			return value = 160*slide-60000;
+		}
+		
+	}
+	
+	document.getElementById('prix').onchange=function(){
+		var value = document.getElementById('prix').value;
+		document.getElementById('afficherPrix').innerHTML = calculStep(value) + ' €';
+	}
+		
+	
 	var compteur = 0;
 	
 	function afficheCritere() {
 		if(compteur == 0) {
-			document.getElementById('listeCritere').innerHTML = "Choisissez vos critères et prenez le volant.";
+			document.getElementById('listeCritere').innerHTML = "Choisissez vos critères et prenez le volant...";
+		}
+		else if(compteur == 1) {
+			document.getElementById('listeCritere').innerHTML = "Votre critère : ";
 		}
 		else {
 			document.getElementById('listeCritere').innerHTML = "Vos critères : ";

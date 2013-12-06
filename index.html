@@ -37,7 +37,7 @@
 			
 		</nav>
 		
-		<section>
+		<div id="section">
 			<div id="sectionContenu">
 				<form method="post" action="VotreSelection.php" id="critere">
 				
@@ -63,7 +63,7 @@
 					
 					<div id="critereBudget">
 						<div id="choixCritereBudget">
-							<input id="prix" onchange="document.getElementById('afficherPrix').innerHTML = document.getElementById('prix').value + ' €';" type="range" name="prix" value="0" max="100000" min="0" step="1000"/>
+							<input id="prix" type="range" name="prix" value="0" max="1000" min="0" step="10"/>
 							<div id="afficherPrix"> 0 €</div>
 						</div>
 					</div>
@@ -147,7 +147,7 @@
 					
 				</form>
 			</div>
-		</section>
+		</div>
 
 		<footer>
 			<div id="footerContenu">

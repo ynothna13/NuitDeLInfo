@@ -3,9 +3,10 @@ body {
 	margin: 0;	
 	font-family: 'Source Sans Pro', sans-serif;
 	font-size: 100%;
+	background-color: #3a3a3a;
 }
 
-ul, li, html, section {
+ul, li, html, #section {
 	margin: 0;
 	padding: 0;
 }
@@ -30,7 +31,7 @@ img, object, embed, canvas, video, audio, picture {
 
 header {
 	width: 100%;
-	background: #3a3a3a;
+	background-color: #3a3a3a;
 }
 
 header #headerContenu {
@@ -63,6 +64,7 @@ nav #navContenu {
 
 nav #navContenu #listeCritere {
 	display: inline;
+	font-size: 110%;
 }
 
 nav #navContenu #motCle {
@@ -75,17 +77,18 @@ nav #navContenu #motCle li {
 	display: inline; 
 }
 
-section {
+#section {
 	width: 100%;
-	background: url(../images/design/calmness.jpg) no-repeat center fixed; 
+	background: url(../images/design/fond.jpg) no-repeat center fixed; 
   	-webkit-background-size: cover; /* pour Chrome et Safari */
   	-moz-background-size: cover; /* pour Firefox */
   	-o-background-size: cover; /* pour Opera */
   	background-size: cover; /* version standardisée */
   	box-shadow: 0 0 5px #3a3a3a; 
+  	position: relative;
 }
 
-section #sectionContenu {
+#section #sectionContenu {
 	width: 1100px;
 	margin: auto;
 	text-align: center;
@@ -94,7 +97,7 @@ section #sectionContenu {
 
 /* Bloc général */
 
-section #sectionContenu div[id^="critere"] {
+#section #sectionContenu div[id^="critere"] {
 	display: inline-block;
 	vertical-align: top;
 	margin: 10px 15px 10px 15px;
@@ -107,7 +110,7 @@ section #sectionContenu div[id^="critere"] {
 	box-shadow: 1px 2px 3px #757574;
 }
 
-section #sectionContenu input[type="submit"] {
+#section #sectionContenu input[type="submit"] {
 	display: inline-block;
 	margin: 10px 15px 10px 15px;
 	padding: 10px;
@@ -121,7 +124,7 @@ section #sectionContenu input[type="submit"] {
 	color: #535f6d;
 }
 	
-section #sectionContenu input[type="submit"]:hover {
+#section #sectionContenu input[type="submit"]:hover {
 	color: #333333;
 	background-color: #e0ecff;
 	border-color: #e0ecff;
@@ -129,82 +132,82 @@ section #sectionContenu input[type="submit"]:hover {
 	text-decoration: underline;
 }
 
-section #sectionContenu div[id^="choixCritere"] {
+#section #sectionContenu div[id^="choixCritere"] {
 	height: 100%;
 	color: white;
 	background-color: rgba(0, 0, 0, 0.8);
 }
 
-section #sectionContenu ul {
+#section #sectionContenu ul {
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
 }
 
-section #sectionContenu ul li {
+#section #sectionContenu ul li {
 	width: 100%;
 	padding: 5px 0 5px 0;
 }
 
-section #sectionContenu ul li:hover {
+#section #sectionContenu ul li:hover {
 	background-color: rgba(255, 255, 255, 0.5);
 }
 
-section #sectionContenu #critereFinition {
+#section #sectionContenu #critereFinition {
 	background: url(../images/design/iconCriteres/finition.png) no-repeat center; 
 	background-size: 100% auto;
 	background-color: white;
 }
 
-section #sectionContenu #critereUtilisation {
+#section #sectionContenu #critereUtilisation {
 	background: url(../images/design/iconCriteres/compteur.png) no-repeat center; 
 	background-size: 100% auto;
 	background-color: white;
 }
 
-section #sectionContenu #critereBudget {
+#section #sectionContenu #critereBudget {
 	background: url(../images/design/iconCriteres/budget.png) no-repeat center; 
 	background-size: auto 100%;
 	background-color: white;
 }
 
-section #sectionContenu #critereAccessibilite {
+#section #sectionContenu #critereAccessibilite {
 	background: url(../images/design/iconCriteres/route.png) no-repeat center; 
 	background-size: auto 100%;
 	background-color: white;
 }
 
-section #sectionContenu #critereSituation {
+#section #sectionContenu #critereSituation {
 	background: url(../images/design/iconCriteres/situation.png) no-repeat center; 
 	background-size: 100% auto;
 	background-color: white;
 }
 
-section #sectionContenu #critereConduite {
+#section #sectionContenu #critereConduite {
 	background: url(../images/design/iconCriteres/conduite.png) no-repeat center; 
 	background-size: auto 100%;
 	background-color: white;
 }
 
-section #sectionContenu #critereSexe {
+#section #sectionContenu #critereSexe {
 	background: url(../images/design/iconCriteres/sexe.png) no-repeat center; 
 	background-size: auto 100%;
 	background-color: white;
 }
 
-section #sectionContenu #critereAge {
+#section #sectionContenu #critereAge {
 	background: url(../images/design/iconCriteres/age.png) no-repeat center; 
 	background-size: 100% auto;
 	background-color: white;
 }
 
-section #sectionContenu #critereOrigine {
+#section #sectionContenu #critereOrigine {
 	background: url(../images/design/iconCriteres/world.png) no-repeat center; 
 	background-size: auto 100%;
 	background-color: white;
 }
 
-section #sectionContenu #critereTransmission {
+#section #sectionContenu #critereTransmission {
 	background: url(../images/design/iconCriteres/transmission.png) no-repeat center; 
 	background-size: auto 100%;
 	background-color: white;
@@ -213,9 +216,11 @@ section #sectionContenu #critereTransmission {
 
 footer {
 	width: 100%;
-	height: 150px;
+	height: 100%;
 	background: #3a3a3a;
 	border-top: 1px solid #585858;
+	bottom: 0;
+	position: relative;
 }
 
 footer #footerContenu {
@@ -226,7 +231,7 @@ footer #footerContenu {
 /***** CSS pour width < 995px *****/
 
 @media screen and (max-width: 1100px) {
-	nav #navContenu, section #sectionContenu, header #headerContenu, nav #navContenu  {
+	nav #navContenu, #section #sectionContenu, header #headerContenu, nav #navContenu  {
 		width: 100%;
 	}
 }
@@ -239,14 +244,14 @@ footer #footerContenu {
 
 @media screen and (min-width : 768px) and (max-width : 1100px) {
 
-	section #sectionContenu div[id^="critere"] {
+	#section #sectionContenu div[id^="critere"] {
 		width: 20%;
 	}
 }
 
 @media screen and (min-width : 768px) and (max-width : 880px) {
 
-	section #sectionContenu div[id^="critere"] {
+	#section #sectionContenu div[id^="critere"] {
 		width: 25%;
 	}
 }
@@ -257,12 +262,12 @@ footer #footerContenu {
 /***** CSS pour entre smartphone et tablette *****/
 
 @media screen and (max-width : 767px) {
-	section #sectionContenu div[id^="critere"] {
+	#section #sectionContenu div[id^="critere"] {
 		width: 43%;
 		margin: 10px 10px 10px 10px;
 	}
 	
-	section #sectionContenu #critereFinition, section #sectionContenu #critereSituation , section #sectionContenu #critereAge {
+	#section ##sectionContenu #critereFinition, #section ##sectionContenu #critereSituation , #section ##sectionContenu #critereAge {
 		background-size: auto 100%;
 	}
 }
@@ -274,7 +279,7 @@ footer #footerContenu {
 
 @media screen and (max-width : 480px) {
 
-	section #sectionContenu div[id^="critere"], section #sectionContenu input[type="submit"] {
+	#section #sectionContenu div[id^="critere"], #section ##sectionContenu input[type="submit"] {
 		width: 95%;
 		margin: 10px 0 10px 0;
 	}
