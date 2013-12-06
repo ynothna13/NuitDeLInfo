@@ -6,6 +6,8 @@
 		<link rel="stylesheet" href="./css/style.css">
 		
 		<script type='text/javascript' src='./js/jquery.js'></script>
+		<script type='text/javascript' src='./js/jquery_ui.js'></script>
+
 		<script type='text/javascript' src='./js/jquery.easing.1.3.js'></script>
 		<script type='text/javascript' src='./js/script.js'></script>
 
@@ -21,16 +23,15 @@
 		<header>
 			<div id="headerContenu">
 				
-
+				<img src="./images/design/logo.png" alt="Logo Your CAR" title="Logo Your CAR" id="logo"/>
 			</div>
 		</header>
 		
 		<nav>
 			<div id="navContenu">
-				Votre choix : 
+				Vos critères : 
 				<ul id="motCle">
-					<li>Berline, </li>
-					<li>Economique</li>
+
 				</ul>
 			</div>
 			
@@ -38,7 +39,7 @@
 		
 		<section>
 			<div id="sectionContenu">
-				<form method="post" action="VotreSelection.php">
+				<form method="post" action="VotreSelection.php" id="critere">
 				
 					<div id="critereFinition">
 						<div id="choixCritereFinition">
@@ -54,15 +55,15 @@
 					<div id="critereUtilisation">
 						<div id="choixCritereUtilisation">
 							<ul>
-							 	<li id="utilisationChoixEssence" class="cursor_link">Essence</li>
-							 	<li id="utilisationChoixDiesel" class="cursor_link">Diesel</li>
+							 	<li id="utilisationChoixEssence" class="cursor_link">0 - 20000 km/an</li>
+							 	<li id="utilisationChoixDiesel" class="cursor_link">> 20000 km/an</li>
 							 </ul>
 						</div>
 					</div>
 					
 					<div id="critereBudget">
 						<div id="choixCritereBudget">
-							<input id="prix" onchange="document.getElementById('afficherPrix').innerHTML = document.getElementById('prix').value;" type="range" name="prix" value="0" max="100000" min="0" step="100"/>
+							<input id="prix" onchange="document.getElementById('afficherPrix').innerHTML = document.getElementById('prix').value;" type="range" name="prix" value="0" max="100000" min="0" step="1000"/>
 							<div id="afficherPrix"> 0 </div>
 						</div>
 					</div>
@@ -82,7 +83,7 @@
 							<ul>
 							 	<li id="situationChoixSeul" class="cursor_link">Seul</li>
 							 	<li id="situationChoixCouple" class="cursor_link">Couple</li>
-							 	<li id="situationChoixSeulFamille" class="cursor_link">Famille</li>
+							 	<li id="situationChoixFamille" class="cursor_link">Famille</li>
 							 	<li id="situationChoixFamilleNombreuse" class="cursor_link">Famille Nombreuse</li>
 							 </ul>
 						</div>
@@ -110,9 +111,9 @@
 					<div id="critereAge">
 						<div id="choixCritereAge">
 							<ul>
-							 	<li id="ageChoix1825" class="cursor_link">18 - 25</li>
-							 	<li id="ageChoix2640" class="cursor_link">26 - 40</li>
-							 	<li id="ageChoix4160" class="cursor_link">41 - 60</li>
+							 	<li id="ageChoix18-25" class="cursor_link">18 - 25</li>
+							 	<li id="ageChoix26-40" class="cursor_link">26 - 40</li>
+							 	<li id="ageChoix41-60" class="cursor_link">41 - 60</li>
 							 	<li id="ageChoix60" class="cursor_link">60+</li>
 							 </ul>
 						</div>
@@ -134,16 +135,15 @@
 					<div id="critereTransmission">
 						<div id="choixCritereTransmission">
 							<ul>
-							 	<li id="transmissionChoix" class="cursor_link">Traction</li>
-							 	<li id="transmissionChoix" class="cursor_link">Propulsion</li>
-							 	<li id="transmission4x4" class="cursor_link">4x4</li>
+							 	<li id="transmissionChoixTraction" class="cursor_link">Traction</li>
+							 	<li id="transmissionChoixPropulsion" class="cursor_link">Propulsion</li>
+							 	<li id="transmissionChoix4x4" class="cursor_link">4x4</li>
 							 </ul>
 						</div>
 					</div>
 					
-					<input type="hidden" id="critere" />
-					
-					<input type="submit" value="Laissez vos idées vous conduire" />
+					<br />
+					<input type="submit" value="Laissez vos idées vous conduire ! " />
 					
 				</form>
 			</div>
