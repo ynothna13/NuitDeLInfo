@@ -103,7 +103,7 @@
 			INNER JOIN pays P
 			ON V.origine = P.id_pays
 			
-			INNER JOIN Marques M
+			INNER JOIN marques M
 			ON V.marque = M.id_marque WHERE 1=1 ' . $critereUtilisation . ' ' . $prix . ' ' . $critereAccessibilite . ' ' . $critereSituation . ' ' . $critereConduite . ' ' . $critereFinition . ' ' . $critereAge . ' ' . $critereOrigine . ' ' . $critereTransmission . ' ' . $critereSexe . ' ORDER BY budget LIMIT 0 , 10';
 
 			//echo $sql;
