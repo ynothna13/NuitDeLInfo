@@ -263,7 +263,7 @@ footer #footerContenu {
 /***** CSS pour entre smartphone et tablette *****/
 
 @media screen and (max-width : 767px) {
-	section {
+	body {
 		background-color: #eaeaea;
 		background-image: none;
 	}
@@ -285,7 +285,7 @@ footer #footerContenu {
 
 @media screen and (max-width : 480px) {
 
-	section {
+	body {
 		background-color: #eaeaea;
 		background-image: none;
 	}
