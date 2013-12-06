@@ -251,6 +251,7 @@ footer #footerContenu {
 
 @media screen and (min-width : 768px) and (max-width : 880px) {
 
+	
 	section #sectionContenu div[id^="critere"] {
 		width: 25%;
 	}
@@ -262,6 +263,11 @@ footer #footerContenu {
 /***** CSS pour entre smartphone et tablette *****/
 
 @media screen and (max-width : 767px) {
+	section {
+		background-color: #eaeaea;
+		background-image: none;
+	}
+	
 	section #sectionContenu div[id^="critere"] {
 		width: 43%;
 		margin: 10px 10px 10px 10px;
@@ -279,6 +285,11 @@ footer #footerContenu {
 
 @media screen and (max-width : 480px) {
 
+	section {
+		background-color: #eaeaea;
+		background-image: none;
+	}
+	
 	section #sectionContenu div[id^="critere"], section #sectionContenu input[type="submit"] {
 		width: 95%;
 		margin: 10px 0 10px 0;
